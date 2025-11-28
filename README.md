@@ -1,59 +1,39 @@
-Grocery App
+🛒 Grocery App
 
-This Python project is a Grocery Store Management Web Application designed as a 3-tier application.
+A Python-based Grocery Store Management Web Application built as a 3-tier application using:
 
-🏗 Architecture (3-Tier)
-1. Front End
+Frontend: HTML, CSS, JavaScript, Bootstrap
 
-HTML
+Backend: Python, Flask
 
-CSS
+Database: MySQL
 
-JavaScript
+📘 Project Description
 
-Bootstrap
+The Grocery App provides basic product and order management features. After giving the app to users, the following feedback was received. Your task is to implement the enhancements listed below.
 
-2. Backend
+🧪 Exercise Requirements
+🔧 Products Module
+✅ 1. Add Edit Button
 
-Python
+On the products page that lists all products, add an Edit button next to the existing Delete button to allow editing product details.
 
-Flask
+✅ 2. Add New UOM (Unit of Measure)
 
-3. Database
+Create a new form that allows adding additional Units of Measure.
+Example: Adding Cubic Meter when the store decides to sell wood.
 
-MSSQL
+This requires modifying:
 
-📌 Description
+Frontend (UI form)
 
-The Grocery App allows users to manage products, units of measure, and orders.
-After initial deployment, user feedback was collected. The following exercises describe the enhancements and fixes required.
+Backend (Python server routes)
 
-🧪 Exercises (User Feedback to Address)
-Products Module
+🛒 Orders Module
+✅ 3. Add Form Validation
 
-Add an Edit button for products
-
-On the products page, add an Edit button next to the existing Delete button.
-
-Editing should allow modifying existing product details.
-
-Add new UOM (Unit of Measure)
-
-Implement a new form to allow adding UOMs (e.g., Cubic Meter if the store starts selling wood).
-
-Requires changes in both:
-
-Backend (Python/Flask)
-
-Frontend (UI)
-
-Orders Module
-
-Add form validation
-
-Currently, orders can be placed without validation.
-
-Add validation for:
+Currently, an order can be placed without any validation.
+You must add validation for:
 
 Empty customer name
 
@@ -61,24 +41,22 @@ Invalid item name
 
 Missing or invalid quantity
 
-This is frontend-only work.
+🔹 This is frontend-only work.
 
-Fix total price not updating grand total
+🐞 4. Fix Total Price – Grand Total Bug
 
-When users manually change the total price of an item, the grand total should update accordingly.
+On the new order page, changing the total price of an item manually does not update the grand total.
+You need to fix this issue.
 
-Fix this bug on the order creation page.
+👁 5. Add “View” Button in Orders Grid
 
-Add View button in orders list
+In the orders listing page, add a View button in the last column.
+When clicked, it should show the order details including:
 
-In the orders grid, add a View button in the last column.
+Items in the order
 
-On click, it should display full order details including:
-
-Items
+Item price
 
 Quantity
 
-Price
-
-Total
+Total price
